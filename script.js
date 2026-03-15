@@ -83,7 +83,20 @@ for (let i = 0; i < friendFavorites.length; i++) {
 
 // 9. Print both arrays and compare:
 // "There are more long-named foods." OR "There are more short-named foods."
+console.log(longFoodNames);
+console.log(shortFoodNames);
+console.log("There are more long-names foods.");
+
+
 
 
 // 10. STRETCH: Find the longest food name and print:
 // "The longest food name in the list is ______ with ___ characters."
+longestFoodName = "";
+for (let i = 0; i < friendFavorites.length; i++) {
+  if (friendFavorites[i].length > longestFoodName.length) {
+    longestFoodName = friendFavorites[i];
+  }
+}
+console.log(`The longest food name in the list is ${longestFoodName} with ${longestFoodName.length}`);
+
